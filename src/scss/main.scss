@@ -27,6 +27,14 @@ $grid-gutter-width: 20px;
 
 @import "bootstrap/scss/bootstrap-grid";
 
+// général //
+
+body {
+  color: white;
+  text-align: center;
+  font-family: "Rama Gothic E";
+}
+
 header {
   background: var(--sand);
 }
@@ -36,5 +44,46 @@ main {
 }
 
 footer {
-  background: ;
+  background: var(--red);
 }
+
+// header //
+
+.navig1 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+
+.navig2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+// main //
+
+header {
+  background: var(--sand);
+}
+
+main {
+  background: var(--sand);
+}
+
+footer {
+  background: var(--red);
+}
+
+.navig {
+  width: 26px;
+}
+
+// footer //
+
+.card {
+  background: var(--sand);
+  box-shadow: 10px 12px 4.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.
