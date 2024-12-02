@@ -12,3 +12,29 @@ img,
 video {
   display: block;
 }
+
+:root {
+  --sand: #c1aa96;
+  --icedcoffee: #aa8c5a;
+  --red: #815353;
+  --deepred: #5e3f24;
+  --green: #816840;
+}
+
+$grid-columns: 10;
+
+$grid-gutter-width: 20px;
+
+@import "bootstrap/scss/bootstrap-grid";
+
+header {
+  background: var(--sand);
+}
+
+main {
+  background: var(--sand);
+}
+
+footer {
+  background: ;
+}
