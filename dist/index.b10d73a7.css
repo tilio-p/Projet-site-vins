@@ -4897,6 +4897,10 @@ body {
   font-weight: 300;
 }
 
+.navig {
+  width: 26px;
+}
+
 header, main {
   background: var(--sand);
 }
@@ -4905,12 +4909,28 @@ footer {
   background: var(--red);
 }
 
-.navig {
-  width: 26px;
-}
-
 .card {
   background: var(--sand);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
   box-shadow: 10px 12px 4.5px #00000040;
+}
+
+.tel {
+  color: #000;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 126px;
+  height: 37px;
+  padding: 4px 6px;
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

@@ -61,6 +61,10 @@ footer {
   font-weight: 300;
 }
 
+.navig {
+  width: 26px;
+}
+
 // main //
 
 header {
@@ -75,15 +79,32 @@ footer {
   background: var(--red);
 }
 
-.navig {
-  width: 26px;
-}
-
 // footer //
 
 .card {
   background: var(--sand);
   box-shadow: 10px 12px 4.5px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //font//
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.
+.tel {
+  //cadre blanc//
+  display: flex;
+  width: 126px;
+  height: 37px;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  //font//
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+}
