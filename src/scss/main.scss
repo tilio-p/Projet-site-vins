@@ -108,3 +108,18 @@ footer {
   font-size: 24px;
   font-weight: 300;
 }
+
+.interaction {
+  display: flex;
+  gap: 20px;
+}
+
+.inscription {
+  display: flex;
+  width: 96px;
+  height: 31px;
+  padding: 1px 0px;
+  justify-content: center;
+  align-items: center;
+  background: var(--deepred);
+}

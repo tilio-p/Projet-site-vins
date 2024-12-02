@@ -4933,4 +4933,19 @@ footer {
   font-weight: 300;
   display: flex;
 }
+
+.interaction {
+  gap: 20px;
+  display: flex;
+}
+
+.inscription {
+  background: var(--deepred);
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 31px;
+  padding: 1px 0;
+  display: flex;
+}
 /*# sourceMappingURL=index.b10d73a7.css.map */
