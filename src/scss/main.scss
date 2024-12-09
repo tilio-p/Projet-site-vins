@@ -49,26 +49,40 @@ footer {
 
 // header //
 
-.navig1 {
+.main-nav {
   font-size: 24px;
   font-weight: 300;
   letter-spacing: 0.96px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navig2 {
+.sec-nav {
   font-size: 16px;
   font-weight: 300;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navig {
   width: 26px;
 }
 
+.main-logo {
+  margin-left: -20px;
+}
+
 // main //
 
 header {
   background: var(--sand);
+  box-shadow: 0px 8px 5.5px 0px rgba(0, 0, 0, 0.31);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: max-content;
 }
 
 main {
@@ -77,6 +91,9 @@ main {
 
 footer {
   background: var(--red);
+  height: 434px;
+  display: flex;
+  align-items: center;
 }
 
 // footer //
@@ -88,6 +105,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 7%;
+  padding-right: 7%;
   //font//
   font-size: 24px;
   font-weight: 300;
@@ -122,4 +141,23 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--deepred);
+}
+
+input {
+  display: flex;
+  width: 218px;
+  height: 31px;
+  padding: 6px 7px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: #b66d6d;
+  //font//
+  color: #ccb2b2;
+  font-family: "Rama Gothic E";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
