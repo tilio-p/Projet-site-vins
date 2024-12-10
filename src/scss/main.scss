@@ -122,7 +122,7 @@ footer {
 //accueil//
 
 .accueil {
-  margin-top: 310px;
+  padding-top: 150px;
 }
 
 .accueil a {
@@ -158,14 +158,22 @@ footer {
 }
 
 .Carton_accueil {
+  //image//
   background-image: url("../images/Logos/Ego.png");
   aspect-ratio: 1;
   background-size: 100%;
+  background-position: 25% 75%;
+  //structure//
+  //padding: 40px;//
 }
+
+//articles//
+
+//article 1//
 
 .pinot-noir {
   background-image: url(../images/Articles/Pinot-noir.png);
-  aspect-ratio: 841/604;
+  aspect-ratio: 819/604;
   background-size: cover;
   position: relative;
 }
@@ -185,11 +193,12 @@ footer {
 
 .bouteilles-twins {
   display: flex;
+  aspect-ratio: 587/751;
 }
 
 .pinot-noir a {
   display: flex;
-  width: 145px;
+  width: 150px;
   height: 40px;
   padding: 5px 12px;
   justify-content: center;
@@ -198,6 +207,25 @@ footer {
   //button style//
   background: var(--deepred);
   box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  //font//
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+//article 2//
+
+.philosophie-photo {
+  background-image: url(../images/Articles/Philosophie.png);
+  aspect-ratio: 1;
+  background-size: cover;
+  position: absolute;
+}
+
+p {
+  font-size: 32px;
+  font-weight: 300;
 }
 
 // footer //
