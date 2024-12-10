@@ -4927,6 +4927,10 @@ header a {
   text-decoration: none;
 }
 
+header a:hover {
+  text-decoration: underline;
+}
+
 header {
   background: var(--sand);
   align-items: center;
@@ -4958,7 +4962,7 @@ footer {
 }
 
 .accueil {
-  margin-top: 150px;
+  margin-top: 310px;
 }
 
 .accueil a {
@@ -4974,6 +4978,10 @@ footer {
   text-decoration: none;
   display: flex;
   box-shadow: 7px 8px 4px #000000a8;
+}
+
+.accueil a:hover {
+  text-decoration: underline;
 }
 
 .carton_droite {
