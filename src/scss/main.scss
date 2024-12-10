@@ -163,6 +163,43 @@ footer {
   background-size: 100%;
 }
 
+.pinot-noir {
+  background-image: url(../images/Articles/Pinot-noir.png);
+  aspect-ratio: 841/604;
+  background-size: cover;
+  position: relative;
+}
+
+.pinot-noir-photo {
+  //image de fond//
+  background-image: url(../images/Photos/closeup-shot-green-grape-leaves-with-beautiful-green-landscape.jpg);
+  aspect-ratio: 3/2;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  //structure//
+  display: flex;
+}
+
+.bouteilles-twins {
+  display: flex;
+}
+
+.pinot-noir a {
+  display: flex;
+  width: 145px;
+  height: 40px;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  //button style//
+  background: var(--deepred);
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+}
+
 // footer //
 
 .card {

@@ -5000,6 +5000,40 @@ footer {
   background-size: 100%;
 }
 
+.pinot-noir {
+  aspect-ratio: 841 / 604;
+  background-image: url("Pinot-noir.62352470.png");
+  background-size: cover;
+  position: relative;
+}
+
+.pinot-noir-photo {
+  aspect-ratio: 3 / 2;
+  background-image: url("closeup-shot-green-grape-leaves-with-beautiful-green-landscape.68db0d01.jpg");
+  background-size: cover;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+}
+
+.bouteilles-twins {
+  display: flex;
+}
+
+.pinot-noir a {
+  background: var(--deepred);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 145px;
+  height: 40px;
+  padding: 5px 12px;
+  display: flex;
+  box-shadow: 7px 8px 4px #000000a8;
+}
+
 .card {
   background: var(--sand);
   flex-direction: column;
