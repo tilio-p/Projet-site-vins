@@ -56,6 +56,7 @@ footer {
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  margin-top: 10%;
 }
 
 .sec-nav {
@@ -65,12 +66,21 @@ footer {
   justify-content: space-between;
 }
 
+.but-nav {
+  display: flex;
+  flex-direction: row;
+}
+
 .navig {
   width: 26px;
 }
 
 .main-logo {
-  margin-left: -20px;
+  margin-left: -40px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 // main //
@@ -82,7 +92,9 @@ header {
   display: flex;
   align-items: center;
   position: fixed;
-  width: max-content;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 main {
@@ -94,6 +106,53 @@ footer {
   height: 434px;
   display: flex;
   align-items: center;
+}
+
+.titre {
+  font-family: "Happy Student";
+  font-size: 96px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+//accueil//
+
+.accueil {
+  margin-top: 150px;
+}
+
+.accueil a {
+  //structure//
+  display: flex;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  //style//
+  width: 150px;
+  height: 40px;
+  background: var(--deepred);
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  //font//
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.carton_droite {
+  background-image: url("../images/Logos/grappe.png");
+  background-repeat: no-repeat;
+}
+
+.banderolle {
+  background: var(--icedcoffee);
+  height: 65px;
+}
+
+.Carton_accueil {
+  background-image: url("../images/Logos/Ego.png");
+  aspect-ratio: 1;
+  background-size: 100%;
 }
 
 // footer //

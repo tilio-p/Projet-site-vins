@@ -4897,6 +4897,7 @@ footer {
   letter-spacing: .96px;
   text-transform: uppercase;
   justify-content: space-between;
+  margin-top: 10%;
   font-size: 24px;
   font-weight: 300;
   display: flex;
@@ -4909,21 +4910,32 @@ footer {
   display: flex;
 }
 
+.but-nav {
+  flex-direction: row;
+  display: flex;
+}
+
 .navig {
   width: 26px;
 }
 
 .main-logo {
-  margin-left: -20px;
+  margin-left: -40px;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header {
   background: var(--sand);
   align-items: center;
-  width: max-content;
   height: 150px;
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   box-shadow: 0 8px 5.5px #0000004f;
 }
 
@@ -4936,6 +4948,48 @@ footer {
   align-items: center;
   height: 434px;
   display: flex;
+}
+
+.titre {
+  text-transform: uppercase;
+  font-family: Happy Student;
+  font-size: 96px;
+  font-weight: 400;
+}
+
+.accueil {
+  margin-top: 150px;
+}
+
+.accueil a {
+  background: var(--deepred);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  padding: 5px 12px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  box-shadow: 7px 8px 4px #000000a8;
+}
+
+.carton_droite {
+  background-image: url("grappe.09371e1b.png");
+  background-repeat: no-repeat;
+}
+
+.banderolle {
+  background: var(--icedcoffee);
+  height: 65px;
+}
+
+.Carton_accueil {
+  aspect-ratio: 1;
+  background-image: url("Ego.ad56cdbc.png");
+  background-size: 100%;
 }
 
 .card {
