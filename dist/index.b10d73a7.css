@@ -4912,6 +4912,7 @@ footer {
 
 .but-nav {
   flex-direction: row;
+  gap: 26px;
   display: flex;
 }
 
@@ -4994,6 +4995,9 @@ footer {
 .banderolle {
   background: var(--icedcoffee);
   height: 65px;
+  margin-top: 55px;
+  margin-left: -150px;
+  margin-right: -150px;
 }
 
 .Carton_accueil {
@@ -5010,6 +5014,7 @@ footer {
 .pinot-noir {
   aspect-ratio: 819 / 604;
   background-image: url("Pinot-noir.62352470.png");
+  background-position: 0 100%;
   background-size: cover;
   flex-direction: column;
   margin-top: 70px;
@@ -5214,6 +5219,10 @@ p {
   max-width: 30%;
 }
 
+.gault img {
+  aspect-ratio: 109 / 89;
+}
+
 .tel {
   color: #000;
   background: #fff;
@@ -5233,6 +5242,17 @@ p {
   display: flex;
 }
 
+.networks {
+  gap: 30px;
+  display: flex;
+}
+
+.francais:hover, .anglais:hover, .allemand:hover {
+  text-shadow: 4px 6px 4.8px #0006;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .inscription {
   background: var(--deepred);
   justify-content: center;
@@ -5243,8 +5263,14 @@ p {
   display: flex;
 }
 
+.interaction:hover {
+  color: var(--Sand, #c1aa96);
+  font-size: 24px;
+  font-weight: 300;
+}
+
 input {
-  color: #ccb2b2;
+  color: #e3e3e3;
   background: #b66d6d;
   border: 1px solid #fff;
   border-radius: 3px;
@@ -5259,5 +5285,9 @@ input {
   font-weight: 300;
   line-height: normal;
   display: flex;
+}
+
+.localiser:hover {
+  color: #000;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

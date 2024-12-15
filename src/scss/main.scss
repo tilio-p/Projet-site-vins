@@ -69,6 +69,7 @@ footer {
 .but-nav {
   display: flex;
   flex-direction: row;
+  gap: 26px;
 }
 
 .navig {
@@ -157,6 +158,9 @@ footer {
 .banderolle {
   background: var(--icedcoffee);
   height: 65px;
+  margin-left: -150px;
+  margin-right: -150px;
+  margin-top: 55px;
 }
 
 .Carton_accueil {
@@ -186,6 +190,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-right: -150px;
+  background-position: left bottom;
 }
 
 .pinot-noir-photo {
@@ -401,6 +406,10 @@ p {
   max-width: 30%;
 }
 
+.gault img {
+  aspect-ratio: 109/89;
+}
+
 .tel {
   //cadre blanc//
   display: flex;
@@ -422,6 +431,29 @@ p {
   gap: 20px;
 }
 
+.networks {
+  display: flex;
+  gap: 30px;
+}
+
+.francais:hover {
+  text-shadow: 4px 6px 4.8px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.anglais:hover {
+  text-shadow: 4px 6px 4.8px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.allemand:hover {
+  text-shadow: 4px 6px 4.8px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .inscription {
   display: flex;
   width: 96px;
@@ -430,6 +462,12 @@ p {
   justify-content: center;
   align-items: center;
   background: var(--deepred);
+}
+
+.interaction:hover {
+  color: var(--Sand, #c1aa96);
+  font-size: 24px;
+  font-weight: 300;
 }
 
 input {
@@ -443,10 +481,14 @@ input {
   border: 1px solid #fff;
   background: #b66d6d;
   //font//
-  color: #ccb2b2;
+  color: #e3e3e3;
   font-family: "Rama Gothic E";
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.localiser:hover {
+  color: #000;
 }
