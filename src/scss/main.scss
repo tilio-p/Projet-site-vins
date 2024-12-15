@@ -182,7 +182,10 @@ footer {
   aspect-ratio: 819/604;
   background-size: cover;
   position: relative;
-  margin-top: 54px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  margin-right: -150px;
 }
 
 .pinot-noir-photo {
@@ -198,6 +201,17 @@ footer {
   display: flex;
 }
 
+.call-logo {
+  display: flex;
+  padding-left: 297px;
+}
+
+.pinot-noir p {
+  padding-left: 116px;
+  width: 559px;
+  padding-top: 78px;
+}
+
 .bouteilles-twins {
   display: flex;
   gap: 50px;
@@ -208,7 +222,7 @@ footer {
   max-width: 100%;
 }
 
-.pinot-noir a {
+.pinot-noir-photo a {
   display: flex;
   width: 150px;
   height: 40px;
@@ -288,6 +302,7 @@ p {
 .pinot-noir-debout {
   display: flex;
   justify-content: center;
+  margin-top: -142px;
 }
 
 .description {
@@ -301,6 +316,7 @@ p {
   //font//
   font-size: 32px;
   font-weight: 600;
+  gap: 30px;
 }
 
 .textes-description {
@@ -310,6 +326,38 @@ p {
   //font//
   font-size: 32px;
   font-weight: 300;
+  gap: 30px;
+}
+
+.titre-page2 {
+  font-family: "Happy Student";
+  font-size: 150px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: -86px;
+}
+
+.sous-titre {
+  font-family: "Happy Student";
+  font-size: 80px;
+  font-weight: 400;
+  padding-top: 57px;
+  padding-bottom: 56px;
+}
+
+.commander {
+  //bouton//
+  display: flex;
+  padding: 18px 26px;
+  justify-content: center;
+  align-items: center;
+  background: var(--fond, #c09570);
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  //font//
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 // footer //
