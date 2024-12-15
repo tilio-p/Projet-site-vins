@@ -4933,8 +4933,9 @@ header a:hover {
 
 header {
   background: var(--sand);
+  z-index: 10;
   align-items: center;
-  height: 150px;
+  height: 140px;
   display: flex;
   position: fixed;
   top: 0;
@@ -4986,6 +4987,7 @@ footer {
 
 .carton_droite {
   background-image: url("grappe.09371e1b.png");
+  background-position: 60% 40%;
   background-repeat: no-repeat;
 }
 
@@ -4997,14 +4999,19 @@ footer {
 .Carton_accueil {
   aspect-ratio: 1;
   background-image: url("Ego.ad56cdbc.png");
-  background-position: 25% 75%;
   background-size: 100%;
+  top: 40px;
+}
+
+.carton_droite img {
+  padding-left: -30px;
 }
 
 .pinot-noir {
   aspect-ratio: 819 / 604;
   background-image: url("Pinot-noir.62352470.png");
   background-size: cover;
+  margin-top: 54px;
   position: relative;
 }
 
@@ -5014,14 +5021,19 @@ footer {
   background-size: cover;
   display: flex;
   position: absolute;
-  top: 20px;
+  bottom: 55px;
   left: 20px;
   right: -20px;
 }
 
 .bouteilles-twins {
-  aspect-ratio: 587 / 751;
+  gap: 50px;
+  margin-left: auto;
   display: flex;
+}
+
+.bouteilles-twins img {
+  max-width: 100%;
 }
 
 .pinot-noir a {
@@ -5032,6 +5044,9 @@ footer {
   gap: 10px;
   width: 150px;
   height: 40px;
+  margin-top: 330px;
+  margin-left: -40px;
+  margin-right: auto;
   padding: 5px 12px;
   font-size: 24px;
   font-weight: 400;
@@ -5044,12 +5059,75 @@ footer {
   aspect-ratio: 1;
   background-image: url("Philosophie.91bef21f.png");
   background-size: cover;
+  display: flex;
   position: absolute;
 }
 
 p {
   font-size: 32px;
   font-weight: 300;
+}
+
+.illustration {
+  background-image: url("Illustration_fond+.9d3e9d61.png");
+}
+
+.degustation {
+  aspect-ratio: 180 / 101;
+  background-image: url("Degustation.f1acb19e.png");
+  background-size: cover;
+  padding-bottom: 70px;
+  display: flex;
+  top: 112px;
+}
+
+.filarianne {
+  align-items: center;
+  gap: 47px;
+  padding-top: 174px;
+  padding-bottom: 103px;
+  display: flex;
+}
+
+.filarianne img {
+  width: 33px;
+}
+
+.filarianne a {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.page-vin {
+  aspect-ratio: 228 / 293;
+  background-image: url("Fond-page2.49b36ef3.jpg");
+  background-size: cover;
+  padding-bottom: 113px;
+}
+
+.pinot-noir-debout {
+  justify-content: center;
+  display: flex;
+}
+
+.description {
+  display: flex;
+}
+
+.legendes {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 32px;
+  font-weight: 600;
+  display: flex;
+}
+
+.textes-description {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 32px;
+  font-weight: 300;
+  display: flex;
 }
 
 .card {
