@@ -621,6 +621,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if (!event.target.closest(".language-selector")) langOptions.style.display = "none";
     });
 });
+document.addEventListener("DOMContentLoaded", ()=>{
+    const phoneNumber = document.getElementById("copy-number");
+    phoneNumber.addEventListener("click", ()=>{
+        // Crée une zone temporaire pour copier le texte
+        const tempTextarea = document.createElement("textarea");
+        tempTextarea.value = phoneNumber.textContent.trim();
+        document.body.appendChild(tempTextarea);
+        // Sélectionne et copie le texte
+        tempTextarea.select();
+        document.execCommand("copy");
+        // Nettoie l'élément temporaire
+        document.body.removeChild(tempTextarea);
+        // Optionnel : Feedback à l'utilisateur
+        alert("Num\xe9ro copi\xe9 : " + phoneNumber.textContent.trim());
+    });
+});
 
 },{}]},["j2YDk","1SICI"], "1SICI", "parcelRequire0300")
 

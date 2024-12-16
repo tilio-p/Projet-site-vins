@@ -472,7 +472,7 @@ p {
   aspect-ratio: 109/89;
 }
 
-.tel {
+.phone-number {
   //cadre blanc//
   display: flex;
   width: 126px;
@@ -486,6 +486,10 @@ p {
   color: #000;
   font-size: 24px;
   font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  user-select: text; /* Permet la sélection du texte */
+  cursor: text; /* Change le curseur pour indiquer qu'on peut sélectionner */
 }
 
 .interaction {

@@ -41,3 +41,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const phoneNumber = document.getElementById("copy-number");
+
+  phoneNumber.addEventListener("click", () => {
+    // Crée une zone temporaire pour copier le texte
+    const tempTextarea = document.createElement("textarea");
+    tempTextarea.value = phoneNumber.textContent.trim();
+    document.body.appendChild(tempTextarea);
+
+    // Sélectionne et copie le texte
+    tempTextarea.select();
+    document.execCommand("copy");
+
+    // Nettoie l'élément temporaire
+    document.body.removeChild(tempTextarea);
+
+    // Optionnel : Feedback à l'utilisateur
+    alert("Numéro copié : " + phoneNumber.textContent.trim());
+  });
+});

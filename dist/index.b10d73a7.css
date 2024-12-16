@@ -5285,8 +5285,11 @@ p {
   aspect-ratio: 109 / 89;
 }
 
-.tel {
+.phone-number {
   color: #000;
+  -webkit-user-select: text;
+  user-select: text;
+  cursor: text;
   background: #fff;
   justify-content: center;
   align-items: center;
@@ -5296,7 +5299,8 @@ p {
   padding: 4px 6px;
   font-size: 24px;
   font-weight: 300;
-  display: flex;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .interaction {
