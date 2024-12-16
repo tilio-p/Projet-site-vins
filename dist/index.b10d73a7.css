@@ -5066,6 +5066,10 @@ footer {
   position: relative;
 }
 
+.pinot-noir.active {
+  z-index: 2;
+}
+
 .pinot-noir-photo {
   aspect-ratio: 3 / 2;
   z-index: 0;
@@ -5150,13 +5154,15 @@ p {
 
 .degustation img {
   aspect-ratio: 815 / 457;
-  z-index: 1;
-  width: 200%;
+  z-index: 0;
+  max-width: 100%;
+  margin-right: -300px;
 }
 
 .ego {
   text-transform: uppercase;
-  z-index: 0;
+  z-index: 1;
+  margin-left: -300px;
   font-family: Happy Student;
   font-size: 750px;
   font-weight: 400;
@@ -5361,6 +5367,5 @@ input {
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
-  display: flex;
 }
 /*# sourceMappingURL=index.b10d73a7.css.map */

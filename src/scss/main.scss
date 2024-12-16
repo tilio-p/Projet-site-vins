@@ -236,6 +236,10 @@ footer {
   transition: z-index 0.3s ease; /* Transition fluide */
 }
 
+.pinot-noir.active {
+  z-index: 2;
+}
+
 .pinot-noir-photo {
   //image de fond//
   background-image: url(../images/Photos/closeup-shot-green-grape-leaves-with-beautiful-green-landscape.jpg);
@@ -328,8 +332,9 @@ p {
 
 .degustation img {
   aspect-ratio: 815/457;
-  width: 200%;
-  z-index: 1;
+  max-width: 100%;
+  z-index: 0;
+  margin-right: -300px;
 }
 
 .ego {
@@ -337,7 +342,8 @@ p {
   font-size: 750px;
   font-weight: 400;
   text-transform: uppercase;
-  z-index: 0;
+  z-index: 1;
+  margin-left: -300px;
 }
 
 //page 2//
@@ -563,5 +569,4 @@ input {
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
-  display: flex;
 }
