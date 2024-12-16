@@ -584,6 +584,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"1SICI":[function(require,module,exports) {
+//articles
 document.addEventListener("DOMContentLoaded", ()=>{
     const pinotNoir = document.querySelector(".pinot-noir");
     const pinotNoirPhoto = document.querySelector(".pinot-noir-photo");
@@ -601,6 +602,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         });
     });
 });
+// langue
 document.addEventListener("DOMContentLoaded", ()=>{
     const currentLang = document.getElementById("current-lang");
     const langOptions = document.getElementById("lang-options");
@@ -621,6 +623,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if (!event.target.closest(".language-selector")) langOptions.style.display = "none";
     });
 });
+//copie du numéro
 document.addEventListener("DOMContentLoaded", ()=>{
     const phoneNumber = document.getElementById("copy-number");
     phoneNumber.addEventListener("click", ()=>{

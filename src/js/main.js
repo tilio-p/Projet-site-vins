@@ -1,3 +1,5 @@
+//articles
+
 document.addEventListener("DOMContentLoaded", () => {
   const pinotNoir = document.querySelector(".pinot-noir");
   const pinotNoirPhoto = document.querySelector(".pinot-noir-photo");
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// langue
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentLang = document.getElementById("current-lang");
@@ -41,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+//copie du numéro
 
 document.addEventListener("DOMContentLoaded", () => {
   const phoneNumber = document.getElementById("copy-number");

@@ -5055,6 +5055,7 @@ footer {
 .pinot-noir {
   aspect-ratio: 819 / 604;
   z-index: 1;
+  cursor: pointer;
   background-image: url("Pinot-noir.62352470.png");
   background-position: 0 100%;
   background-size: cover;

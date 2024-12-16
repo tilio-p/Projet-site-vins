@@ -234,6 +234,7 @@ footer {
   background-position: left bottom;
   z-index: 1; /* Définit la priorité initiale pour pinot-noir */
   transition: z-index 0.3s ease; /* Transition fluide */
+  cursor: pointer;
 }
 
 .pinot-noir.active {
