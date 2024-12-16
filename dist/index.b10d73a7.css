@@ -5124,12 +5124,57 @@ footer {
   box-shadow: 7px 8px 4px #000000a8;
 }
 
-.philosophie-photo {
+.philosophie {
   aspect-ratio: 1;
+  z-index: 1;
+  cursor: pointer;
   background-image: url("Philosophie.91bef21f.png");
+  background-position: 0 100%;
   background-size: cover;
+  flex-direction: column;
+  margin-top: 170px;
+  margin-left: -150px;
+  transition: z-index .3s;
+  display: flex;
+  position: relative;
+  left: 100px;
+}
+
+.philosophie-photo {
+  aspect-ratio: 3 / 2;
+  z-index: 0;
+  background-image: url("vineyards-sunset-autumn-harvest-ripe-grapes-wine-region-southern-moravia-czech-republic-v.f9c186c9.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: z-index .3s;
   display: flex;
   position: absolute;
+  bottom: 63px;
+  right: 83px;
+}
+
+.philosophie p {
+  width: 454px;
+  padding-top: 94px;
+  padding-left: 76px;
+}
+
+.philosophie a {
+  text-transform: uppercase;
+  background: #5e3f24;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  margin-top: 60%;
+  margin-left: 60%;
+  padding: 5px 12px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  box-shadow: 7px 8px 4px #000000a8;
 }
 
 p {
@@ -5141,32 +5186,82 @@ p {
   background-image: url("Illustration_fond+.9d3e9d61.png");
 }
 
+.illu-fond {
+  padding-top: 100px;
+}
+
+.philosophie {
+  z-index: 1;
+  cursor: pointer;
+  background-image: url("Vignerons.902404ca.png");
+  background-position: 0 100%;
+  background-size: cover;
+  flex-direction: column;
+  margin-top: 170px;
+  margin-left: -150px;
+  transition: z-index .3s;
+  display: flex;
+  position: relative;
+  left: 100px;
+}
+
+.nos-vignerons-photo {
+  z-index: 0;
+  background-image: url("Vigneron.512c804a.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition: z-index .3s;
+  display: flex;
+  position: absolute;
+}
+
 .degustation {
   aspect-ratio: 180 / 101;
   background-image: url("Degustation.f1acb19e.png");
   background-size: cover;
   justify-content: center;
-  padding-bottom: 70px;
-  padding-left: -150px;
-  padding-right: -150px;
+  max-width: 117.5%;
+  margin-bottom: 100px;
+  margin-left: -150px;
+  margin-right: -150px;
   display: flex;
-  top: 112px;
+  top: 300px;
 }
 
 .degustation img {
   aspect-ratio: 815 / 457;
   z-index: 0;
   max-width: 100%;
-  margin-right: -300px;
+  margin-right: -230px;
 }
 
 .ego {
   text-transform: uppercase;
   z-index: 1;
-  margin-left: -300px;
+  margin-left: -550px;
   font-family: Happy Student;
   font-size: 750px;
   font-weight: 400;
+}
+
+.venez {
+  z-index: 2;
+  text-transform: uppercase;
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 65px;
+  margin-top: 300px;
+  padding: 5px 12px;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .filarianne {

@@ -232,8 +232,8 @@ footer {
   flex-direction: column;
   margin-right: -150px;
   background-position: left bottom;
-  z-index: 1; /* Définit la priorité initiale pour pinot-noir */
-  transition: z-index 0.3s ease; /* Transition fluide */
+  z-index: 1;
+  transition: z-index 0.3s ease;
   cursor: pointer;
 }
 
@@ -252,8 +252,8 @@ footer {
   bottom: 55px;
   //structure//
   display: flex;
-  z-index: 0; /* Définit la priorité initiale pour pinot-noir-photo */
-  transition: z-index 0.3s ease; /* Transition fluide */
+  z-index: 0;
+  transition: z-index 0.3s ease;
 }
 
 .call-logo {
@@ -300,12 +300,58 @@ footer {
 
 //article 2//
 
-.philosophie-photo {
+.philosophie {
   background-image: url(../images/Articles/Philosophie.png);
   aspect-ratio: 1;
+  display: flex;
   background-size: cover;
+  position: relative;
+  margin-top: 170px;
+  flex-direction: column;
+  margin-left: -150px;
+  background-position: left bottom;
+  z-index: 1;
+  transition: z-index 0.3s ease;
+  cursor: pointer;
+  left: 100px;
+}
+
+.philosophie-photo {
+  background-image: url(../images/Photos/vineyards-sunset-autumn-harvest-ripe-grapes-wine-region-southern-moravia-czech-republic-v.jpg);
+  aspect-ratio: 3/2;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
+  z-index: 0;
+  transition: z-index 0.3s ease;
+  bottom: 63px;
+  right: 83px;
+}
+
+.philosophie p {
+  padding-left: 76px;
+  width: 454px;
+  padding-top: 94px;
+}
+
+.philosophie a {
+  display: flex;
+  width: 160px;
+  height: 50px;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  background: #5e3f24;
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  margin-top: 60%;
+  margin-left: 60%;
+  // font
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 p {
@@ -317,17 +363,52 @@ p {
   background-image: url(../images/Logos/Illustration_fond+.png);
 }
 
+.illu-fond {
+  padding-top: 100px;
+}
+
+//article 3
+
+.philosophie {
+  background-image: url(../images/Articles/Vignerons.png);
+
+  display: flex;
+  background-size: cover;
+  position: relative;
+  margin-top: 170px;
+  flex-direction: column;
+  margin-left: -150px;
+  background-position: left bottom;
+  z-index: 1;
+  transition: z-index 0.3s ease;
+  cursor: pointer;
+  left: 100px;
+}
+
+.nos-vignerons-photo {
+  background-image: url(../images/Photos/Vigneron.jpg);
+
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 0;
+  transition: z-index 0.3s ease;
+}
+
 //article 4//
 
 .degustation {
   background-image: url(../images/Articles/Degustation.png);
   background-size: cover;
   aspect-ratio: 180/101;
-  top: 112px;
+  max-width: 117.5%;
+  top: 300px;
   display: flex;
-  padding-bottom: 70px;
-  padding-left: -150px;
-  padding-right: -150px;
+  margin-left: -150px;
+  margin-right: -150px;
+  margin-bottom: 100px;
   justify-content: center;
 }
 
@@ -335,7 +416,7 @@ p {
   aspect-ratio: 815/457;
   max-width: 100%;
   z-index: 0;
-  margin-right: -300px;
+  margin-right: -230px;
 }
 
 .ego {
@@ -344,7 +425,26 @@ p {
   font-weight: 400;
   text-transform: uppercase;
   z-index: 1;
-  margin-left: -300px;
+  margin-left: -550px;
+}
+
+.venez {
+  position: absolute;
+  z-index: 2;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 65px;
+  padding: 5px 12px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 300px;
 }
 
 //page 2//
