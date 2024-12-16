@@ -4932,6 +4932,45 @@ header a:hover {
   text-decoration: underline;
 }
 
+.langage-selector {
+  cursor: pointer;
+  position: relative;
+}
+
+.main-lang {
+  border: 1px solid var(--white, #fff);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 27px;
+  margin-left: 50px;
+  padding: 4px 10px;
+  transition: background-color .3s;
+  display: flex;
+}
+
+.lang-options {
+  z-index: 10;
+  background-color: #c79d8c;
+  border: 2px solid #fff;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lang-option {
+  color: #fff;
+  padding: 10px;
+  transition: background-color .3s;
+}
+
+.lang-option:hover {
+  background-color: #af7f6f;
+}
+
 header {
   background: var(--sand);
   z-index: 10;
@@ -4974,6 +5013,8 @@ footer {
   align-items: center;
   width: 150px;
   height: 40px;
+  margin-top: 95px;
+  margin-left: 214px;
   padding: 5px 12px;
   font-size: 24px;
   font-weight: 400;
@@ -5013,20 +5054,24 @@ footer {
 
 .pinot-noir {
   aspect-ratio: 819 / 604;
+  z-index: 1;
   background-image: url("Pinot-noir.62352470.png");
   background-position: 0 100%;
   background-size: cover;
   flex-direction: column;
   margin-top: 70px;
   margin-right: -150px;
+  transition: z-index .3s;
   display: flex;
   position: relative;
 }
 
 .pinot-noir-photo {
   aspect-ratio: 3 / 2;
+  z-index: 0;
   background-image: url("closeup-shot-green-grape-leaves-with-beautiful-green-landscape.68db0d01.jpg");
   background-size: cover;
+  transition: z-index .3s;
   display: flex;
   position: absolute;
   bottom: 55px;
@@ -5095,9 +5140,26 @@ p {
   aspect-ratio: 180 / 101;
   background-image: url("Degustation.f1acb19e.png");
   background-size: cover;
+  justify-content: center;
   padding-bottom: 70px;
+  padding-left: -150px;
+  padding-right: -150px;
   display: flex;
   top: 112px;
+}
+
+.degustation img {
+  aspect-ratio: 815 / 457;
+  z-index: 1;
+  width: 200%;
+}
+
+.ego {
+  text-transform: uppercase;
+  z-index: 0;
+  font-family: Happy Student;
+  font-size: 750px;
+  font-weight: 400;
 }
 
 .filarianne {
@@ -5263,7 +5325,7 @@ p {
   display: flex;
 }
 
-.interaction:hover {
+.interaction a:hover {
   color: var(--Sand, #c1aa96);
   font-size: 24px;
   font-weight: 300;
