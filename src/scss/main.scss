@@ -33,6 +33,7 @@ body {
   color: white;
   text-align: center;
   font-family: "Rama Gothic E";
+  background: var(--sand);
 }
 
 header {
@@ -182,7 +183,7 @@ footer {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 214px;
+  margin-left: 360px;
   margin-top: 95px;
 }
 
@@ -223,22 +224,8 @@ footer {
 //article 1//
 
 .pinot-noir {
-  background-image: url(../images/Articles/Pinot-noir.png);
-  aspect-ratio: 819/604;
-  background-size: cover;
   position: relative;
   margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  margin-right: -150px;
-  background-position: left bottom;
-  z-index: 1;
-  transition: z-index 0.3s ease;
-  cursor: pointer;
-}
-
-.pinot-noir.active {
-  z-index: 2;
 }
 
 .pinot-noir-photo {
@@ -250,10 +237,36 @@ footer {
   left: 20px;
   right: -20px;
   bottom: 55px;
+  margin-right: -80px;
   //structure//
   display: flex;
-  z-index: 0;
+  z-index: 1;
   transition: z-index 0.3s ease;
+}
+
+.pinot-noir-inner {
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/Articles/Pinot-noir.png);
+  aspect-ratio: 819/604;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin-right: -100px;
+  background-position: left bottom;
+  transition: z-index 0.3s ease;
+  cursor: pointer;
+  top: 40px;
+  right: 60px;
+}
+
+.active {
+  .pinot-noir-photo {
+    z-index: 0;
+  }
+  .pinot-noir-inner {
+    z-index: 1;
+  }
 }
 
 .call-logo {
@@ -301,10 +314,6 @@ footer {
 //article 2//
 
 .philosophie {
-  background-image: url(../images/Articles/Philosophie.png);
-  aspect-ratio: 1;
-  display: flex;
-  background-size: cover;
   position: relative;
   margin-top: 170px;
   flex-direction: column;
@@ -328,6 +337,16 @@ footer {
   transition: z-index 0.3s ease;
   bottom: 63px;
   right: 83px;
+  z-index: 1;
+}
+
+.philosophie-inner {
+  background-image: url(../images/Articles/Philosophie.png);
+  aspect-ratio: 1;
+  display: flex;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
 .philosophie p {
@@ -359,42 +378,82 @@ p {
   font-weight: 300;
 }
 
-.illustration {
+.philosophie .illustration {
   background-image: url(../images/Logos/Illustration_fond+.png);
+  max-width: 60%;
+  aspect-ratio: 184/305;
+  background-size: cover;
+  margin-left: -500px;
 }
 
-.illu-fond {
-  padding-top: 100px;
+.illu-fond img {
+  margin-top: 300px;
 }
 
 //article 3
 
-.philosophie {
-  background-image: url(../images/Articles/Vignerons.png);
-
+.Nos-vignerons {
   display: flex;
+  margin-top: 100px;
+}
+
+.vignerons-inner {
+  background-image: url(../images/Articles/Vignerons.png);
   background-size: cover;
   position: relative;
   margin-top: 170px;
   flex-direction: column;
   margin-left: -150px;
   background-position: left bottom;
-  z-index: 1;
+  z-index: 0;
   transition: z-index 0.3s ease;
   cursor: pointer;
   left: 100px;
-}
-
-.nos-vignerons-photo {
-  background-image: url(../images/Photos/Vigneron.jpg);
-
-  background-size: cover;
+  aspect-ratio: 666/607;
   width: 100%;
   height: 100%;
+  top: -70px;
+}
+
+.Nos-vignerons-photo {
+  background-image: url(../images/Photos/Vigneron.jpg);
+  background-size: cover;
   position: absolute;
   display: flex;
-  z-index: 0;
+  z-index: 1;
   transition: z-index 0.3s ease;
+  aspect-ratio: 45/41;
+  width: 45%;
+  cursor: pointer;
+}
+
+.Nos-vignerons a {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  padding: 5px 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--Bordeau, #815353);
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 380px;
+  margin-left: 419px;
+}
+
+.Nos-vignerons p {
+  width: 444px;
+  margin-left: 140px;
+  margin-top: 100px;
+}
+
+.Nos-vignerons .call-logo {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 //article 4//
@@ -403,13 +462,13 @@ p {
   background-image: url(../images/Articles/Degustation.png);
   background-size: cover;
   aspect-ratio: 180/101;
-  max-width: 117.5%;
-  top: 300px;
+  max-width: 100%;
+  top: 150px;
   display: flex;
-  margin-left: -150px;
-  margin-right: -150px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .degustation img {
@@ -431,8 +490,6 @@ p {
 .venez {
   position: absolute;
   z-index: 2;
-  top: 42%;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
   font-weight: 400;
@@ -443,8 +500,11 @@ p {
   width: 180px;
   height: 65px;
   padding: 5px 12px;
-  background-color: rgba(0, 0, 0, 0);
-  margin-top: 300px;
+  margin-top: 400px;
+  margin-left: 400px;
+  background: #816840;
+  box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.66);
+  text-decoration: none;
 }
 
 //page 2//
@@ -470,7 +530,7 @@ p {
   background-image: url(../images/Articles/Fond-page2.jpg);
   aspect-ratio: 228/293;
   background-size: cover;
-  padding-bottom: 113px;
+  margin-bottom: 113px;
 }
 
 .pinot-noir-debout {
@@ -532,6 +592,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin-top: 350px;
 }
 
 // footer //
@@ -670,4 +731,9 @@ input {
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
+}
+
+.droits {
+  display: flex;
+  margin-top: 20px;
 }
